@@ -214,14 +214,16 @@ ul#nav li.current a { color: #F06000; }
    color: #7A7A7A;
 }
 #about .profile-pic {
-   position: relative;
-   width: 250px;
-   height: 250px;
+   position:relative;
+   height: 200px;
+   width: 200px;
+   float: left;
+   align-items: center;
    border-radius: 100%;
 }
-#about .contact-details { width: 41.66667%; }
+#about .contact-details { width: 60.66667%; }
 #about .download {
-   width: 58.33333%;
+   width: 39.33333%;
    padding-top: 6px;
 }
 #about .main-col { padding-right: 5%; }
@@ -238,8 +240,23 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
-#about .three-columns{
 
+.about-body{
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: left;
+  padding: 2em;
+  overflow-y: scroll;
+}
+
+.about-grid{
+  text-align: left;
+  justify-content: left;
+  width: 80%;
+  height: 550px;
+  margin-bottom: 20px;
 }
 
 
@@ -304,7 +321,7 @@ ul#nav li.current a { color: #F06000; }
 	text-align: left;
 }
 .bars .skills {
-  	margin-top: 36px;
+  margin-top: 36px;
    list-style: none;
 }
 .bars li {
@@ -834,11 +851,24 @@ call-to-action .button {
    float: left;
    color: #ebeeee;
 }
+#contact h2{
+  font: 40px 'opensans-bold', sans-serif;
+  color: white;
+  margin-bottom: 6px;
+  text-align: center;
+}
 
+#contact h3 {
+   font: 20px 'opensans-bold', sans-serif;
+   color: white;
+   margin-bottom: 6px;
+   text-align: center;
+}
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
    margin-bottom: 6px;
+
 }
 #contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;

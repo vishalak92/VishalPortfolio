@@ -4,7 +4,7 @@
     "occupation":"(Your Occupation Here)",
     "description":"Information Management graduate student at the University of Washington specializing in Business Intelligence and Data Science",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"I am a graduate student at the University of Washington with a professional experience of 4 years in the technology space. I have working knowledge in the areas of Software Engineering, Data Analysis and Visualization, Project Management and Business Intelligence. I am a data enthusiast and I like exploring the possibilities of using data to make a difference in people's lives. Apart from coding, I spend my time looking for new dance moves, interesting conversations and public speaking opportunities.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "vishalak@uw.edu",
     "phone": "206-427-0515",
@@ -14,18 +14,23 @@
       "state":"(Washington)",
       "zip": "(98105)"
     },
-    "website": "http://www.timbakerdev.com",
+    "website": "http://www.khatrivishal.com",
     "resumedownload":"http://timbakerdev.com",
     "social":[
 
       {
-        "name":"linkedin",
+        "name":"Gmail: Vishalak@uw.edu",
+        "url":"mailto:vishalak@uw.edu",
+        "className":"fa fa-envelope"
+      },
+      {
+        "name":"LinkedIn",
         "url":"https://www.linkedin.com/in/vishal-a-khatri/",
         "className":"fa fa-linkedin"
       },
 
       {
-        "name":"github",
+        "name":"Github",
         "url":"https://github.com/vishalak92",
         "className":"fa fa-github"
       }
@@ -35,106 +40,193 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Washington",
+        "degree":"Masters in Information Management (Specializations: Data Science and Business Intelligence)",
+        "graduated":"September 2018 - June 2020",
+        "description":"Completed Coursework: ",
+        "descriptionpointers":[
+          {
+            "pointer": "Introduction to Information Management"
+          },
+          {
+            "pointer": "Analytic Methods for Information Professionals (Research)"
+          },
+          {
+            "pointer": "Management of Information Organizations"
+          }
+        ]
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Vivekanand Education Society's Institute of Technology",
+        "degree":"Bachelors in Computer Engineering",
+        "graduated":"August 2010 - June 2014",
+        "description":"Completed Coursework: ",
+        "descriptionpointers":[
+          {
+            "pointer": "Computer Programming"
+          },
+          {
+            "pointer": "Data Structures and Files"
+          },
+          {
+            "pointer": "Analysis of Algorithms and Design"
+          },
+          {
+            "pointer": "Database Management System"
+          },
+          {
+            "pointer": "Advanced Database Management System"
+          },
+          {
+            "pointer": "Software Architecture"
+          },
+          {
+            "pointer": "Web Engineering"
+          }
+        ]
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"JP Morgan Chase and Co.",
+        "title":"Associate",
+        "years":"February 2018 - August 2018",
+        "description": [
+          {
+            "pointer": "Spearheaded a project that involved decommissioning an old reporting system for the Australian region and designing a strategic reporting platform for 1000+ clients"
+          },
+          {
+            "pointer": "Partnered with local operations team to automate 600 reports by creating generic PL/SQL procedures in a span of 8 months which resulted in a save of ten full-time employees"
+          },
+          {
+            "pointer": "Received the Global excellence award in the areas of client focus and innovation"
+          }
+        ]
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"JP Morgan Chase and Co.",
+        "title":"Technology Analyst",
+        "years":"July 2014 - January 2017",
+        "description":[
+          {
+            "pointer": "Collaborated with business users to procure requirements and designed Fund Accounting and Regulatory reporting solutions using IBM Cognos and Oracle"
+          },
+          {
+            "pointer": "Designed and implemented an end-to-end automation workflow in Java for regression testing which contributed in saving an effort of 200 man-hours annually"
+          },
+          {
+            "pointer": "Engineered a full-fledged working solution for streamlining the impact analysis process which was later deployed as a standard solution in all reporting teams around the globe"
+          }
+        ]
       }
     ],
     "skills":[
       {
-        "name":"Git",
-        "level":"60%"
+        "skillcategory": "Programming Languages:",
+        "skilllist":[
+        {
+        "name":"Core Java",
+        "level":"70%"
+        },
+        {
+        "name":"Python",
+        "level":"40%"
+        }
+      ]
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "skillcategory": "Database Technologies:",
+        "skilllist":[
+        {
+        "name":"SQL",
+        "level":"75%"
+        },
+        {
+        "name":"PL/SQL",
+        "level":"70%"
+        },
+        {
+        "name":"Data Warehousing",
+        "level":"65%"
+        }
+      ]
       },
       {
-        "name":"ReactJs",
+        "skillcategory": "Tools:",
+        "skilllist":[
+        {
+        "name":"Tableau",
+        "level":"70%"
+        },
+        {
+        "name":"IBM Cognos",
+        "level":"70%"
+        },
+        {
+        "name":"Figma",
         "level":"50%"
+        }
+
+      ]
       },
       {
+        "skillcategory": "Web Technologies:",
+        "skilllist":[
+        {
+        "name":"HTML",
+        "level":"70%"
+        },
+        {
         "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"VueJs",
         "level":"50%"
+        },
+        {
+        "name":"React JS",
+        "level":"30%"
+        }
+
+      ]
       },
       {
-        "name":"MongoDB",
-        "level":"80%"
+        "skillcategory": "Concepts:",
+        "skilllist":[
+        {
+        "name":"Data Analysis and Reporting",
+        "level":"75%"
+        },
+        {
+        "name":"Data Visualization",
+        "level":"70%"
+        },
+        {
+        "name":"Project Management",
+        "level":"75%"
+        }
+
+      ]
       }
+
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
         "title":"Resume Website",
-        "category":"A React based resume website template",
+        "category":"A React based resume website",
         "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "url":"http://www.khatrivishal.com"
       }
     ]
   },
   "testimonials":{
     "testimonials":[
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
+        "text":"Vishal is a rockstar!! He is one of them you would love to have in your team. He's got the right attitude and skills and that should take him places. He is constantly questioning the processes, keeps innovating and increasing productivity through automation.",
+        "user":"Bharath Reddy (Vice President at JP Morgan Chase and Co.)"
       },
       {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
+        "text":"I know Vishal Personally and Professionally, his technical and problem solving skills are second to none, he as a person is very straight forward and very geninue a very rare combination!!His ability to understand a problem and give solutions are always forward thinking which makes him stand out from rest of them, to add to it he has the skill to multi tasking efficiently!! I will certainly recommend him for any position in any capacity as he will be an Asset to the organization.",
+        "user":"Vikram Mitta (Associate at JP Morgan Chase and Co.)"
       }
     ]
   }
