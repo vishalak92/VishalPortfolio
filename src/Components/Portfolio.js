@@ -11,16 +11,18 @@ class Portfolio extends Component {
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
-      show: false
+      show: false,
+      activeIndex:null
     };
   }
 
   handleClose() {
-    this.setState({ show: false });
+    this.setState({ show: false, activeIndex:null });
   }
 
-  handleShow() {
-    this.setState({ show: true });
+  handleShow(e, index) {
+    this.setState({ show: true,activeIndex:index });
+
   }
 
 
@@ -34,68 +36,76 @@ class Portfolio extends Component {
     const tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
 
     if(this.props.data){
-      var projects = this.props.data.projects.map((projects) => {
+      var projects = this.props.data.projects.map((projects,index) => {
         var projectImage = 'images/portfolio/'+projects.image;
         return <div key={projects.title} className="columns portfolio-item">
            <div className="item-wrap">
-               <img alt={projects.title} src={projectImage} />
+           <div className="imageContainter">
+               <img alt={projects.title} src={projectImage} className = "projectImage" onClick = {this.handleShow}/>
 
-               {
-               <Modal show={this.state.show} onHide={this.handleClose}>
-                 <Modal.Header closeButton>
-                   <Modal.Title>Modal heading</Modal.Title>
-                 </Modal.Header>
-                 <Modal.Body>
-                   <h4>Text in a modal</h4>
-                   <p>
-                     Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                   </p>
+            </div>
+            {
+            <Modal className="modal-container customModalImpl" show={this.state.activeIndex === index} onHide={this.handleClose}>
+              <Modal.Header closeButton>
+                Header
+              </Modal.Header>
+              <Modal.Body>
+                <h4>{projects.title}</h4>
+                <p>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                </p>
 
-                   <h4>Popover in a modal</h4>
-                   <p>
-                     there is a{' '}
-                     <OverlayTrigger overlay={popover}>
-                       <a href="#popover">popover</a>
-                     </OverlayTrigger>{' '}
-                     here
-                   </p>
+                <h4>Popover in a modal</h4>
+                <p>
+                  there is a{' '}
+                  <OverlayTrigger overlay={popover}>
+                    <a href="#popover">popover</a>
+                  </OverlayTrigger>{' '}
+                  here
+                </p>
 
-                   <h4>Tooltips in a modal</h4>
-                   <p>
-                     there is a{' '}
-                     <OverlayTrigger overlay={tooltip}>
-                       <a href="#tooltip">tooltip</a>
-                     </OverlayTrigger>{' '}
-                     here
-                   </p>
+                <h4>Tooltips in a modal</h4>
+                <p>
+                  there is a{' '}
+                  <OverlayTrigger overlay={tooltip}>
+                    <a href="#tooltip">tooltip</a>
+                  </OverlayTrigger>{' '}
+                  here
+                </p>
 
-                   <hr />
+                <hr />
 
-                   <h4>Overflowing text to show scroll behavior</h4>
-                   <p>
-                     Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                     dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                     ac consectetur ac, vestibulum at eros.
-                   </p>
-                   <p>
-                     Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                     et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                     auctor.
-                   </p>
-                   
-                 </Modal.Body>
-                 <Modal.Footer>
-                   <Button onClick={this.handleClose}>Close</Button>
-                 </Modal.Footer>
-               </Modal>
-               }
+                <h4>Overflowing text to show scroll behavior</h4>
+                <p>
+                  Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                  dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+                  ac consectetur ac, vestibulum at eros.
+                </p>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                  et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                  auctor.
+                </p>
 
 
+              </Modal.Body>
+              <Modal.Footer>
+                <Button onClick={this.handleClose}>Close</Button>
+              </Modal.Footer>
+            </Modal>
+
+            }
+
+               <h3> Netflix User Experience Research </h3>
+               <h1> This is a dummy description. This is a dummy description. This is a dummy description. This is a dummy description. This is a dummy description.</h1>
+               <div className = "details-button">
+               <Button bsStyle="primary" bsSize="large" onClick={e => this.handleShow(e,index)}>
+               View Details
+               </Button>
+               </div>
 
           </div>
-          <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>
-          Launch demo modal
-          </Button>
+
 
         </div>
 
@@ -112,6 +122,7 @@ class Portfolio extends Component {
             <h1>Check Out Some of My Works.</h1>
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+
                 {projects}
             </div>
 
