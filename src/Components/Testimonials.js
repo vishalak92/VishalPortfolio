@@ -17,7 +17,7 @@ class Testimonials extends Component {
     return (
       <section id="testimonials">
       <div className="text-container">
-         <div className="row">
+         <div className="rowComp">
 
             <div className="two columns header-col">
                <h1><span>Client Testimonials</span></h1>

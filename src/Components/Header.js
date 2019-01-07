@@ -32,7 +32,7 @@ class Header extends Component {
 
       </nav>
 
-      <div className="row banner">
+      <div className="rowComp banner">
          <div className="banner-text">
             <h1 className="responsive-headline">Hello, I'm {name}.</h1>
             <h2><span>Write Code. Analyze Data. Change Lives.</span></h2>

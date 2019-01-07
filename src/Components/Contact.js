@@ -17,7 +17,7 @@ class Contact extends Component {
     return (
       <section id="contact">
 
-         <div className="row section-head">
+         <div className="rowComp section-head">
 
             <div className="two columns header-col">
 
@@ -32,7 +32,7 @@ class Contact extends Component {
 
          </div>
 
-         <div className="row">
+         <div className="rowComp">
             <div className="eight columns">
             <h3> I am always up for a conversation and would love to connect with you.
             We can talk about Technology, Dance, Sherlock, Stand-up Comedy and everything in between.
