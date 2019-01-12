@@ -58,6 +58,11 @@ class Contact extends Component {
             <p className="address">
               {email}<br />
             </p>
+
+            <h4>Phone</h4>
+           <p className="address">
+             {phone}<br />
+           </p>
 				   </div>
 
             </aside>

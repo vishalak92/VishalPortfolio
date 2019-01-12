@@ -9,13 +9,12 @@
     "email": "vishalak@uw.edu",
     "phone": "206-427-0515",
     "address":{
-      "street":"(5901 Roosevelt Way NE, Apt 309)",
-      "city":"(Seattle)",
-      "state":"(Washington)",
-      "zip": "(98105)"
+      "street":"5901 Roosevelt Way NE, Apt 309",
+      "city":"Seattle",
+      "state":"Washington",
+      "zip": "98105"
     },
     "website": "http://www.khatrivishal.com",
-    "resumedownload":"http://timbakerdev.com",
     "social":[
 
       {
@@ -130,7 +129,11 @@
         },
         {
         "name":"Python",
-        "level":"40%"
+        "level":"60%"
+        },
+        {
+        "name":"R",
+        "level":"50%"
         }
       ]
       },
@@ -178,7 +181,7 @@
         },
         {
         "name":"CSS",
-        "level":"50%"
+        "level":"70%"
         },
         {
         "name":"React JS",
@@ -211,22 +214,228 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Resume Website",
-        "shortDescription":"A React based resume website",
-        "image":"resume-website.jpg",
-        "url":"http://www.khatrivishal.com"
-      },
-      {
-        "title":"Analysis of Netflix User Experience",
-        "shortDescription":"Analysis of Netflix User Experience",
+        "homeTitle":"Analysis of Netflix User Experience",
+        "homeDescription":"Study the impact of changes in Netflix's feedback system on its User Experience.",
         "image":"Netflix.jpg",
-        "url":"/netflix"
+        "url":"/netflix",
+        "detailTitle": "ANALYSIS OF IMPACT OF NETFLIX'S FEEDBACK SYSTEM ON ITS USER EXPERIENCE",
+        "detailShortDesc":"Coursework: IMT 570 | September 2018 - December 2018",
+        "detailProjectReportTitle":"See Project Report",
+        "detailProjectReportLink":"https://docs.google.com/presentation/d/1Q3VGW_KHneLc8FML6qoLdIbK-hQ7QT_h9Xq6F8kvqt0/edit#slide=id.g4a3c05b035_12_1",
+        "summaryTitle": "Problem Statement",
+        "detailProjectSummary":"User experience has played a significant role in the advancement of Netflix into the online streaming industry. In the early 2000s, Netflix directly threatened the stance of Blockbuster. This demonstrates the importance of user experience in the growth of Netflix over the years. In 2017, Netflix switched from the traditional ‘5-star’ rating system to a ‘Thumbs-Up/ Thumbs-Down’ system. In 2018, Netflix removed all user reviews from its platform. With these major changes in the long-standing feedback system, it is crucial for us to analyze how it will impact the overall user experience of Netflix.",
+        "detailProjectImplTitle":"Steps and Outcomes:",
+        "detailProjectImplDesc":[
+          {
+            "descDetail":"Analyzed the impact of Netflix’s changes in the long standing feedback system on its overall user experience."
+          },
+          {
+            "descDetail":"Examined the existing literature. Conducted surveys using cluster and purposive sampling, and interviews using convenient sampling."
+          },
+          {
+            "descDetail":"The survey concluded that close to 75% participants mentioned that they didn’t notice the removal of user reviews from Netflix. However, when presented with the screenshots of the Old and New implementations of Netflix’s feedback system, close to 70% of the users preferred the old implementation with ‘5-star’ rating system and user reviews."
+          },
+          {
+            "descDetail":"This result aligned with findings from the interviews where participants mentioned that having the older implementation of the feedback system can significantly improve their user experience on Netflix."
+          },
+          {
+            "descDetail":"Concluded that the recent changes to the feedback system by Netflix have not directly impacted the user experience"
+          },
+          {
+            "descDetail":"However, the following are the recommendations from the study:"
+          },
+          {
+            "descDetail":"  Netflix can better its user experience by bringing back user reviews and the ‘5-star’ rating system."
+          },
+          {
+            "descDetail":"  Netflix can launch a new campaign to better market this sought after feature."
+          },
+          {
+            "descDetail":"  The streaming service provider can invest in bringing consistency in its feedback system across all its platforms like the Website, Web Application, and Mobile Application."
+          }
+
+        ] ,
+        "keyLearnings": "Key Learnings:",
+        "Learnings":[
+          {
+            "learning":"Data Collection Methods"
+          },
+          {
+            "learning":"Data Sampling Methods"
+          },
+          {
+            "learning":"Research Planning"
+          },
+          {
+            "learning":"Data Analysis"
+          },
+          {
+            "learning":"Hypothesis testing"
+          }
+        ]
+
       },
       {
-        "title":"Resume Website",
-        "shortDescription":"A React based resume website",
-        "image":"resume-website.jpg",
-        "url":"http://www.khatrivishal.com"
+        "homeTitle":"ART (Automated Regression Testing) tool",
+        "homeDescription":"An end-to-end regression testing automation workflow",
+        "image":"Jpmorgan.jpg",
+        "url":"/art",
+        "detailTitle": "ART (AUTOMATED REGRESSION TESTING) TOOL",
+        "detailShortDesc":"Innovation project at JP Morgan Chase and Co. | June 2016 - December 2016",
+        "detailProjectReportTitle":"",
+        "detailProjectReportLink":"https://docs.google.com/presentation/d/1Q3VGW_KHneLc8FML6qoLdIbK-hQ7QT_h9Xq6F8kvqt0/edit#slide=id.g4a3c05b035_12_1",
+        "summaryTitle": "Problem Statement",
+        "detailProjectSummary":"While working with the strategic reporting platform for investment banking clients at JP Morgan Chase and Co., I observed that the regression testing for our system was done manually during monthly production releases. The manual nature of the testing made it time consuming and prone to human errors. Many such incidents were reported that led to high severity issues. I proposed an innovation idea about building the ART tool that would mimick all actions performed by a tester, run regression tests on all reporting artifacts in the system and send a consolidated summary to the testing and management teams for verification.",
+        "detailProjectImplTitle":"Functionalities and Outcomes:",
+        "detailProjectImplDesc":[
+          {
+            "descDetail":"The tool implemented a queue-based multithreaded Architecture."
+          },
+          {
+            "descDetail":"The first module was responsible for reading inputs from varied sources like flat files and databases. This module then converted the input to a JSON format."
+          },
+          {
+            "descDetail":"The second module consumed the generated JSON and triggered reporting artifacts through a Web Service."
+          },
+          {
+            "descDetail":"The third module continuously monitored the requests triggered in module two and downloaded the reports once they were generated."
+          },
+          {
+            "descDetail":"The fourth module was responsible for converting the report from an XML based format to XLSX using SAX Parser."
+          },
+          {
+            "descDetail":"The fifth module compared the before and after snapshots of the reports and generated comparison results in the form of XLSX files."
+          },
+          {
+            "descDetail":"The sixth module produced a summary of all comparisons, persisted it in a database by triggering a PL/SQL procedure, and sent an email summary to testing and management teams."
+          },
+          {
+            "descDetail":"There was a seperate standalone module to generate a Tableau dashboard for the summary of the tool execution over months and years."
+          },
+          {
+            "descDetail":"The tool brought down the testing time during production releases by 200 manhours annually and increased the regression testing coverage for our system."
+          }
+
+        ],
+        "keyLearnings": "Technology Stack:",
+        "Learnings":[
+          {
+            "learning":"Java"
+          },
+          {
+            "learning":"SQL & PL/SQL"
+          },
+          {
+            "learning":"Tableau"
+          },
+          {
+            "learning":"XML"
+          },
+          {
+            "learning":"JSON"
+          }
+        ]
+
+      },
+      {
+        "homeTitle":"Sherlock",
+        "homeDescription":"Investigate the potential impact of a change on the overall system",
+        "image":"Sherlock.jpg",
+        "url":"/art",
+        "detailTitle": "SHERLOCK",
+        "detailShortDesc":"Stretch project at JP Morgan Chase and Co. | June 2016 - December 2016",
+        "detailProjectReportTitle":"",
+        "detailProjectReportLink":"https://docs.google.com/presentation/d/1Q3VGW_KHneLc8FML6qoLdIbK-hQ7QT_h9Xq6F8kvqt0/edit#slide=id.g4a3c05b035_12_1",
+        "summaryTitle": "Problem Statement",
+        "detailProjectSummary":"Sherlock was inspired by the nature of the fictional character Sherlock Holmes who investigates criminal cases. This Sherlock application was intended to investigate the potential impacted artifacts for a particular change that was requested by the client. Impact analysis played a crucial role in our system because of the huge number of components involved, interfaces with external applications and shared artifacts. Sherlock brought down the impact analysis time from hours to minutes and allowed developers to focus their energies towards core development work.",
+        "detailProjectImplTitle":"Functionalities and Outcomes:",
+        "detailProjectImplDesc":[
+          {
+            "descDetail":"The tool was implemented as a self-service application that can be used by different teams like developers, business analysts and production support."
+          },
+          {
+            "descDetail":"The tool provided a React based UI to the users for selecting the artifact that was undergoing change."
+          },
+          {
+            "descDetail":"This served as an input for a series of SQL queries and procedures to calculate the impact of this change on other artifacts and components."
+          },
+          {
+            "descDetail":"The results were presented to the users in the form of different tables highlighting individual artifact impact, clients impacted and indirect dependencies."
+          },
+          {
+            "descDetail":"The tool also provided a functionality to check the run times of different reporting artifacts over a period of time for performance analysis."
+          },
+          {
+            "descDetail":"Sherlock brought down the turn-around time for impact analysis from hours to minutes and was deployed as a standard solution across all global teams."
+          }
+
+        ],
+        "keyLearnings": "Technology Stack:",
+        "Learnings":[
+          {
+            "learning":"Java"
+          },
+          {
+            "learning":"REACT JS"
+          },
+          {
+            "learning":"SQL & PL/SQL"
+          },
+          {
+            "learning":"XML"
+          },
+          {
+            "learning":"JSON"
+          }
+        ]
+
+      },
+      {
+        "homeTitle":"Twitter analysis for TVT (Television Viewership in Thousands)",
+        "homeDescription":"A crowd based TV rating system",
+        "image":"Twitter.jpeg",
+        "url":"/tvt",
+        "detailTitle": "Analysis of Twitter data for TVT (Television Viewership in Thousands)",
+        "detailShortDesc":"Senior Year Project | January 2014 - May 2014",
+        "detailProjectReportTitle":"See Project Report",
+        "detailProjectReportLink":"https://drive.google.com/file/d/18M-zTXL921E3XWC8ZYIwCXyt9MM9bFF6/view?usp=sharing",
+        "summaryTitle": "Problem Statement",
+        "detailProjectSummary":"TV viewing rate is a critical indicator regarding the popularity of shows, eventually influencing the revenue of broadcast stations via advertisements. Owing to the advance of the Internet and many social networking sites, surveying massive audiences’ media lifestyles has become increasingly easier. In order to better evaluate TV viewing rates in the light of evolving TV lifestyles including the online video and mobile environments, we are proposing to estimate the public TV viewing rates by means of Twitter where we can monitor crowd voices relative to TV watching.",
+        "detailProjectImplTitle":"Functionalities and Outcomes:",
+        "detailProjectImplDesc":[
+          {
+            "descDetail":"The system collected data from Twitter using the Twitter Search API and persisted that data in flat files."
+          },
+          {
+            "descDetail":"The tweets were then classified using different hashtags to bucket according to different tv shows."
+          },
+          {
+            "descDetail":"The classified data was then analyzed using R to determine different parameters like Tweets per show, calculation of TVT, geographic popularity, increase/decrease in tweets over time etc."
+          },
+          {
+            "descDetail":"The analyzed data was presented in the form of dynamic graphs and charts using SHINY."
+          },
+          {
+            "descDetail":"The system also presented a segregation of user tweets into positive and negative using keywords."
+          },
+          {
+            "descDetail":"The system was intended to serve as a one stop shop for television producers for determining audience sentiment about the shows and current popularity."
+          }
+
+        ],
+        "keyLearnings": "Technology Stack:",
+        "Learnings":[
+          {
+            "learning":"Java"
+          },
+          {
+            "learning":"R"
+          },
+          {
+            "learning":"SHINY"
+          }
+        ]
+
       }
     ]
   },
