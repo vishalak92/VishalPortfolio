@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Grid, Cell} from 'react-mdl';
-import { Modal, Popover, Tooltip, OverlayTrigger, Button } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 
 
 class Portfolio extends Component {
@@ -29,12 +29,8 @@ class Portfolio extends Component {
 
   render() {
 
-    const popover = (
-      <Popover id="modal-popover" title="popover">
-        very popover. such engagement
-      </Popover>
-    );
-    const tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
+
+
 
     if(this.props.data){
       var projects = this.props.data.projects.map((projects,index) => {

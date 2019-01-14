@@ -258,16 +258,16 @@
         "keyLearnings": "Key Learnings:",
         "Learnings":[
           {
+            "learning":"UX Research"
+          },
+          {
+            "learning":"User-Centered Design"
+          },
+          {
             "learning":"Data Collection Methods"
           },
           {
-            "learning":"Data Sampling Methods"
-          },
-          {
-            "learning":"Research Planning"
-          },
-          {
-            "learning":"Data Analysis"
+            "learning":"Data Sampling and Analysis"
           },
           {
             "learning":"Hypothesis testing"
